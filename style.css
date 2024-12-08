@@ -1,0 +1,225 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Quiz Container Styling */
+.quiz-container {
+  text-align: center;
+  background: #5b4b8a;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+/* Correct Option */
+.correct {
+  background-color: #4caf50 !important; /* Green */
+  color: #fff;
+}
+
+/* Incorrect Option */
+.incorrect {
+  background-color: #f44336 !important; /* Red */
+  color: #fff;
+}
+
+/* Option Buttons */
+button.option {
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+button.option:hover {
+  transform: scale(1.05);
+}
+
+button.option.correct:hover, 
+button.option.incorrect:hover {
+  transform: none; /* Disable scaling on feedback colors */
+}
+
+/* Title Styling */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Waiting Message Styling */
+.waiting-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #d1c4f8;
+}
+
+/* Input and Button Container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input Field */
+input {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 60%;
+  max-width: 300px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button */
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background: #ff8800;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #d5eea9;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Quiz Container */
+.quiz-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Question Number */
+#question-number {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Option Buttons */
+button.option {
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.option:hover {
+  transform: scale(1.05);
+}
+
+button.option.correct {
+  background-color: #4caf50 !important; /* Green */
+  color: #fff;
+}
+
+button.option.incorrect {
+  background-color: #f44336 !important; /* Red */
+  color: #fff;
+}
+/* Next Button Styling */
+#next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff8800;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#next-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+#next-button:hover:not(:disabled) {
+  background: #ff7043;
+  transform: scale(1.05);
+}
+
+
+/* Calculator Styling */
+#calculator-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#calculator-display {
+  width: 90%;
+  max-width: 300px;
+  height: 40px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: right;
+  padding: 5px;
+}
+
+#calculator-buttons button {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 5px;
+  width: 60px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #5b4b8a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#calculator-buttons button:hover {
+  background: #6c5c9f;
+}
+
+#calculator-buttons button:active {
+  background: #4a3a70;
+}
+

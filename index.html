@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="login-container">
+    <h1>Join the Game</h1>
+
+    <p>Game PIN: <span id="game-pin"></span></p>
+    <input id="username" type="text" placeholder="Enter your username">
+    <input id="pin" type="text" placeholder="Enter game PIN">
+    <button id="join-game-button">Join Game</button>
+  </div>
+
+  <div id="game-container" style="display: none;">
+    <div id="leaderboard">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard-list"></ul>
+    </div>
+    <div id="app" class="quiz-container">
+      <p id="question-number">Question 1 of 10</p>
+      <p class="question-text">What is 2 + 2?</p>
+      <div class="options-container">
+        <button class="option">3</button>
+        <button class="option">4</button>
+        <button class="option">5</button>
+        <button class="option">6</button>
+      </div>
+      <button id="next-button" disabled>Next</button>
+    </div>
+  </div>
+  <script src="script.js?v=1"></script>
+
+  <script src="script.js" defer></script>
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+
+
+</body>
+
+</html>
